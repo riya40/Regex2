@@ -51,6 +51,17 @@ public class CheckingPattern {
             System.out.println("Invalid");
         }
     }
+    public static void password(String password) {
+        //added password checking
+        String pwd = "^[a-z](?=.[A-Z]+)(?=.[0-9]+).{8,}$";
+        Pattern pattern = Pattern.compile(pwd);
+        Matcher matcher = pattern.matcher(password);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid");
+        }
+    }
 
 
 }

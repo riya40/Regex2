@@ -45,6 +45,13 @@ public class RegexPattern extends CheckingPattern
         CheckingPattern.mobilenum(mobileNum);
         return mobileNum;
     }
+    public static String Password() {
+        System.out.println("Enter your Password");
+        password = scanner.next();
+        CheckingPattern.password(password);
+        return password;
+
+    }
     
 
 }
