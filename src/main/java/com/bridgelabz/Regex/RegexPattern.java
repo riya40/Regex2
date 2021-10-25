@@ -39,6 +39,12 @@ public class RegexPattern extends CheckingPattern
         CheckingPattern.emailid(emailId);
         return emailId;
     }
+    public static String MobileNum() {
+        System.out.println("Enter your MobileNumber");
+        mobileNum = scanner.next();
+        CheckingPattern.mobilenum(mobileNum);
+        return mobileNum;
+    }
     
 
 }

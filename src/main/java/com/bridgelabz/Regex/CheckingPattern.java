@@ -40,6 +40,17 @@ public class CheckingPattern {
             System.out.println("Invalid");
         }
     }
+    public static void mobilenum(String mobileNum) {
+        //checking mobile number pattern
+        String mobile = "^[0-9]{2}\\s{1}[0-9]{10}$";
+        Pattern pattern = Pattern.compile(mobile);
+        Matcher matcher = pattern.matcher(mobileNum);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid");
+        }
+    }
 
 
 }
