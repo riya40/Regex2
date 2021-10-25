@@ -33,6 +33,12 @@ public class RegexPattern extends CheckingPattern
         CheckingPattern.lastname(lastName);
         return lastName;
     }
+    public static String EmailId() {
+        System.out.println("Enter your EmailId");
+        emailId = scanner.next();
+        CheckingPattern.emailid(emailId);
+        return emailId;
+    }
     
 
 }

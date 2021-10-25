@@ -4,6 +4,7 @@ import java.util.regex.Pattern;
 
 public class CheckingPattern {
 
+
     public static void firstname(String First) {
         //checking the pattern for first name
         System.out.println("Printing the First Namae");
@@ -15,6 +16,7 @@ public class CheckingPattern {
             System.out.println("Pattern not matched");
         }
     }
+
     public static void lastname(String Lastname) {
         //checking the pattern for lasst name
         System.out.println("Printing the last name");
@@ -24,6 +26,18 @@ public class CheckingPattern {
             System.out.println("Pattern matched");
         } else {
             System.out.println("Pattern not matched");
+        }
+    }
+
+    public static void emailid(String emailId) {
+        //email pattern checking
+        String email = "^[a-z0-9]+([_+-.][0-9a-z]+)*@[a-z]+.[a-z]{2,3}$";
+        Pattern pattern = Pattern.compile(email);
+        Matcher matcher = pattern.matcher(emailId);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid");
         }
     }
 
