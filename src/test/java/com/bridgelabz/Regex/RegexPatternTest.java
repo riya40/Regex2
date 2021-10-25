@@ -15,12 +15,30 @@ import java.util.regex.Pattern;
  */
 public class RegexPatternTest
 {
-    CheckingPattern checkingPattern= new CheckingPattern();
     RegexPattern regexPattern=new RegexPattern();
     @Test
     public void Firstnamechceking(){
-        String first=regexPattern.userFirstName();
-        //Pattern firstname= Pattern.compile("^[A-Za-z]{3,6}$");
+        String first=regexPattern.FirstName();
         Assertions.assertEquals("p",first);
    }
+    @Test
+    public void Lastnamechceking(){
+        String last=regexPattern.LastName();
+        Assertions.assertEquals("p",last);
+    }
+    @Test
+    public void emailchceking(){
+        String mail=regexPattern.EmailId();
+        Assertions.assertEquals("dfsdv22@mail.com",mail);
+    }
+    @Test
+    public void mobilenumchceking(){
+        String num=regexPattern.EmailId();
+        Assertions.assertEquals("9191239743",num);
+    }
+    @Test
+    public void passwordchceking(){
+        String pwd=regexPattern.EmailId();
+        Assertions.assertEquals("dfsdv22@mail.com",pwd);
+    }
 }
