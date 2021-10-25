@@ -15,6 +15,17 @@ public class CheckingPattern {
             System.out.println("Pattern not matched");
         }
     }
+    public static void lastname(String Lastname) {
+        //checking the pattern for lasst name
+        System.out.println("Printing the last name");
+        Pattern pattern = Pattern.compile("^[A-Za-z]{3,6}$");
+        Matcher matcher = pattern.matcher(Lastname);
+        if (matcher.find()) {
+            System.out.println("Pattern matched");
+        } else {
+            System.out.println("Pattern not matched");
+        }
+    }
 
 
 }

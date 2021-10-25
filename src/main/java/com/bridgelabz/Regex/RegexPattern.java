@@ -18,6 +18,7 @@ public class RegexPattern extends CheckingPattern
              Password();
 
     }
+        //Added first ame validation
         public static String FirstName() {
         System.out.println("Enter your First Name");
         firstName = scanner.next();
@@ -25,5 +26,14 @@ public class RegexPattern extends CheckingPattern
             return firstName;
         }
 
+        //Added last name validation
+    public static String LastName(){
+        System.out.println("Enter your last Name");
+        lastName = scanner.next();
+        CheckingPattern.lastname(lastName);
+        return lastName;
     }
+    
+
+}
 
