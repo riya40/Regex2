@@ -19,12 +19,12 @@ public class RegexPatternTest
     @Test
     public void Firstnamechceking(){
         String first=regexPattern.FirstName();
-        Assertions.assertEquals("p",first);
+        Assertions.assertEquals("Priya",first);
    }
     @Test
     public void Lastnamechceking(){
         String last=regexPattern.LastName();
-        Assertions.assertEquals("p",last);
+        Assertions.assertEquals("Lucky",last);
     }
     @Test
     public void emailchceking(){
@@ -33,12 +33,12 @@ public class RegexPatternTest
     }
     @Test
     public void mobilenumchceking(){
-        String num=regexPattern.EmailId();
-        Assertions.assertEquals("9191239743",num);
+        String num=regexPattern.MobileNum();
+        Assertions.assertEquals("91 9640099322",num);
     }
     @Test
     public void passwordchceking(){
-        String pwd=regexPattern.EmailId();
-        Assertions.assertEquals("dfsdv22@mail.com",pwd);
+        String pwd=regexPattern.Password();
+        Assertions.assertEquals("Prybbnu20#",pwd);
     }
 }
